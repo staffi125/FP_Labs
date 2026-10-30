@@ -1,0 +1,14 @@
+cabal-version:      2.4
+name:               fp-lab2
+version:            1.0.0
+synopsis:           Паралельний метод Гаусса для СЛАР
+build-type:         Simple
+
+executable gauss
+    main-is:          Main.hs
+    hs-source-dirs:   app, src
+    other-modules:    Matrix, Gauss
+    build-depends:    base >=4.14 && <5,
+                      array
+    default-language: Haskell2010
+    ghc-options:      -O2 -Wall -threaded -rtsopts "-with-rtsopts=-N"

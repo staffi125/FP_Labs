@@ -1,0 +1,13 @@
+cabal-version:      2.4
+name:               fp-lab3
+version:            1.0.0
+synopsis:           Обробка тексту підручника: слова на голосні за абеткою
+build-type:         Simple
+
+executable vowel-words
+    main-is:          Main.hs
+    hs-source-dirs:   app, src
+    other-modules:    Types, Lexer, Vowels
+    build-depends:    base >=4.14 && <5
+    default-language: Haskell2010
+    ghc-options:      -O2 -Wall
